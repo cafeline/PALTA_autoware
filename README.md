@@ -17,6 +17,13 @@ sudo apt install ros-humble-autoware-vehicle-info-utils
 MAKEFLAGS="-j1" colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release --parallel-workers 1
 
 ```
+## 実行前に
+CANインタフェースを有効にするために、　***USBCANを接続後に***以下を実行
+```
+./setup-can.sh
+```
+
+
 # Autoware - the world's leading open-source software project for autonomous driving
 
 ![Autoware_RViz](https://user-images.githubusercontent.com/63835446/158918717-58d6deaf-93fb-47f9-891d-e242b02cba7b.png)
