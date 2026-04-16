@@ -2,6 +2,7 @@
 ```
 cd path/to/PALTA_autoware
 vcs import src < repositories/autoware.repos
+vcs import src < repositories/extra-packages.repos
 
 # bashrcに追加することを推奨
 source /opt/ros/humble/setup.bash
