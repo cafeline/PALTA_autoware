@@ -1,2 +1,0 @@
-builtin_interfaces/Time stamp
-roboteq_msgs/RoboteqStatus status
