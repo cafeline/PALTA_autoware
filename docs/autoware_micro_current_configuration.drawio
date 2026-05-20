@@ -1,0 +1,123 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="autowareMicroCurrentConfiguration" name="Current Configuration">
+    <mxGraphModel dx="3264" dy="1878" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1" value="autoware_micro_launch current configuration" vertex="1">
+          <mxGeometry height="40" width="620" x="40" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontColor=#000000;labelBackgroundColor=none;" value="autoware.launch.xml&#xa;Full Palta micro launch" vertex="1">
+          <mxGeometry height="70" width="260" x="50" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontColor=#000000;labelBackgroundColor=none;" value="planning_simulator.launch.xml&#xa;Dummy vehicle/localization/perception" vertex="1">
+          <mxGeometry height="70" width="260" x="50" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontColor=#000000;labelBackgroundColor=none;" value="Map" vertex="1">
+          <mxGeometry height="60" width="120" x="390" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontColor=#000000;labelBackgroundColor=none;" value="Sensing / Localization / Perception" vertex="1">
+          <mxGeometry height="80" width="200" x="550" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontColor=#000000;labelBackgroundColor=none;" value="Planning&#xa;minimal defaults" vertex="1">
+          <mxGeometry height="80" width="160" x="800" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontColor=#000000;labelBackgroundColor=none;" value="Control&#xa;trajectory follower / gate / mux" vertex="1">
+          <mxGeometry height="80" width="180" x="1010" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontColor=#000000;labelBackgroundColor=none;" value="Vehicle or simple_planning_simulator" vertex="1">
+          <mxGeometry height="80" width="190" x="1240" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontColor=#000000;labelBackgroundColor=none;" value="System / Diagnostics&#xa;AUTO state, MRM, diagnostic graph" vertex="1">
+          <mxGeometry height="80" width="190" x="740" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontColor=#000000;labelBackgroundColor=none;" value="RViz / API&#xa;initial pose, route, engage" vertex="1">
+          <mxGeometry height="80" width="180" x="1010" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;fontSize=13;fontColor=#000000;labelBackgroundColor=none;" value="simulator_engage_relay&#xa;/autoware/engage -&amp;gt; /vehicle/engage" vertex="1">
+          <mxGeometry height="80" width="190" x="1340" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="13" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fontColor=#000000;labelBackgroundColor=none;" value="Current simplified Planning flow" vertex="1">
+          <mxGeometry height="40" width="400" x="50" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;labelBackgroundColor=none;" value="&lt;font&gt;Mission Planner&lt;br&gt;route&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="130" x="50" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;labelBackgroundColor=none;" value="&lt;font&gt;Behavior Path Planner&lt;br&gt;start + static obstacle avoidance&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="170" x="230" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#000000;labelBackgroundColor=none;" value="&lt;font&gt;PathToTrajectory&lt;br&gt;smoother=none, optimizer=none&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="170" x="450" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;labelBackgroundColor=none;" value="&lt;font&gt;Motion Velocity Planner&lt;br&gt;obstacle stop only&lt;/font&gt;" vertex="1">
+          <mxGeometry height="80" width="170" x="670" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;labelBackgroundColor=none;" value="Scenario Selector" vertex="1">
+          <mxGeometry height="60" width="140" x="890" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;labelBackgroundColor=none;" value="Velocity Smoother" vertex="1">
+          <mxGeometry height="60" width="150" x="1080" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;dashed=1;fontColor=#000000;labelBackgroundColor=none;" value="Planning trajectory relay&#xa;validator off&#xa;/velocity_smoother/trajectory -&amp;gt; /planning/trajectory" vertex="1">
+          <mxGeometry height="100" width="210" x="1280" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;dashed=1" value="&lt;font color=&quot;#000000&quot;&gt;Skipped by default: path smoother, path optimizer, validator, evaluator, parking, lane change, map-rule behavior velocity modules, special motion velocity modules&lt;/font&gt;" vertex="1">
+          <mxGeometry height="70" width="680" x="40" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="30" edge="1" parent="1" source="3" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=2;fontColor=#000000;labelBackgroundColor=none;" target="5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="31" edge="1" parent="1" source="4" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;strokeWidth=2;fontColor=#000000;labelBackgroundColor=none;" target="6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="32" edge="1" parent="1" source="5" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;fontColor=#000000;labelBackgroundColor=none;" target="6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="33" edge="1" parent="1" source="6" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;fontColor=#000000;labelBackgroundColor=none;" target="7" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="34" edge="1" parent="1" source="7" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;fontSize=10;fontColor=#000000;labelBackgroundColor=none;" target="8" value="/planning/trajectory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="35" edge="1" parent="1" source="8" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;fontSize=10;fontColor=#000000;labelBackgroundColor=none;" target="9" value="vehicle command">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="36" edge="1" parent="1" source="10" style="endArrow=block;html=1;rounded=0;strokeColor=#9673a6;fontSize=10;fontColor=#000000;labelBackgroundColor=none;" target="8" value="AUTO / diagnostics">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="37" edge="1" parent="1" source="11" style="endArrow=block;html=1;rounded=0;strokeColor=#9673a6;fontSize=10;fontColor=#000000;labelBackgroundColor=none;" target="10" value="initial pose / route / engage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="38" edge="1" parent="1" source="10" style="endArrow=block;html=1;rounded=0;strokeColor=#d79b00;dashed=1;fontSize=10;fontColor=#000000;labelBackgroundColor=none;" target="12" value="/autoware/engage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="39" edge="1" parent="1" source="12" style="endArrow=block;html=1;rounded=0;strokeColor=#d79b00;dashed=1;fontSize=10;fontColor=#000000;labelBackgroundColor=none;" target="9" value="/vehicle/engage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="40" edge="1" parent="1" source="14" style="endArrow=block;html=1;rounded=0;strokeColor=#82b366;strokeWidth=2;fontColor=#000000;labelBackgroundColor=none;" target="15" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="41" edge="1" parent="1" source="15" style="endArrow=block;html=1;rounded=0;strokeColor=#82b366;strokeWidth=2;fontSize=10;fontColor=#000000;labelBackgroundColor=none;" target="16" value="path">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="42" edge="1" parent="1" source="16" style="endArrow=block;html=1;rounded=0;strokeColor=#82b366;strokeWidth=2;fontSize=10;fontColor=#000000;labelBackgroundColor=none;" target="17" value="trajectory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="43" edge="1" parent="1" source="17" style="endArrow=block;html=1;rounded=0;strokeColor=#82b366;strokeWidth=2;fontColor=#000000;labelBackgroundColor=none;" target="18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="44" edge="1" parent="1" source="18" style="endArrow=block;html=1;rounded=0;strokeColor=#82b366;strokeWidth=2;fontColor=#000000;labelBackgroundColor=none;" target="19" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="45" edge="1" parent="1" source="19" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;dashed=1;fontSize=10;fontColor=#000000;labelBackgroundColor=none;" target="20" value="/planning/scenario_planning/velocity_smoother/trajectory">
+          <mxGeometry relative="1" x="-1" y="-81" as="geometry">
+            <mxPoint x="-40" y="-11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="46" edge="1" parent="1" source="20" style="endArrow=block;html=1;rounded=0;strokeColor=#666666;dashed=1;fontSize=10;fontColor=#000000;labelBackgroundColor=none;" target="8" value="/planning/trajectory">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
